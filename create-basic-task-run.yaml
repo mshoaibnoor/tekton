@@ -1,0 +1,8 @@
+# This is an example of TaskRun. TaskRun executes a Task named hello-task-run 
+apiVersion: tekton.dev/v1beta1
+kind: TaskRun
+metadata:
+  name: hello-task-run
+spec:
+  taskRef:
+    name: hello

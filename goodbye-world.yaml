@@ -1,0 +1,12 @@
+# A simple example to create Task for Tekton
+apiVersion: tekton.dev/v1beta1
+kind:   Task
+metadata:
+  name: goodbye
+spec:
+  steps:
+    - name: goodbye
+      image: ubuntu
+      script: |
+        #!/bin/bash
+        echo "Goodbye World!"
